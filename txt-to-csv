@@ -60,6 +60,7 @@ def raw_tw_to_pd(tweets_data):
     tweets['notifications'] = list(map(lambda tweet: tweet['user']['notifications'], tweets_data))
     
     tweets['text'] = list(map(lambda tweet: tweet['text'] if 'extended_tweet' not in tweet else tweet['extended_tweet']['full_text'], tweets_data))
+    tweets['quoted_text'] = list(map(lambda tweet: tweet['text'] if 'quoted_status' not in tweet else tweet['quoted_status']['text'], tweets_data))
     tweets['tweet_id'] = list(map(lambda tweet: tweet['id'], tweets_data))
     tweets['created_at'] = list(map(lambda tweet: tweet['created_at'], tweets_data))
     tweets['lenght'] = list(map(lambda tweet: len(tweet['text']) if'extended_tweet' not in tweet else len(tweet['extended_tweet']['full_text']) , tweets_data))
