@@ -1,0 +1,41 @@
+import tweepy as tw
+import pandas as pd
+import csv
+import preprocessor as p
+import datetime
+
+api_key = 'Y5IXLJra1dkhi8LHzS77JJudw'
+api_secret = 'MJ2BJpfBQWW6XZ9qhNG37TvJnLzVuqO5zmTG0ROWGVO2NuHbpK'
+access_token = '903831142754693120-hm9NwxWykFSTBxDlQeDmagxccGklUjb'
+access_secret = '64DrS8exjT41RPnwpoMgiEfyq8sqToCxk2lRjJhFP1Idk'
+
+auth = tw.OAuthHandler(api_key, api_secret)
+auth.set_access_token(access_token, access_secret)
+api = tw.API(auth, wait_on_rate_limit=True)
+
+search_words = "solar energy panel"
+startDate = datetime.datetime(2020, 6, 1, 0, 0, 0)
+date_since = datetime.datetime(2020, 1, 1, 0, 0, 0)
+COLS = ['tweet','name','location','time']
+
+# Collect tweets
+tweets = tw.Cursor(api.search,
+              q=search_words,
+              lang="en",
+              since='2018-04-23',
+              tweet_mode='extended').items(500)
+
+tweet_info = pd.DataFrame(columns=COLS)
+
+count = 0
+for tweet in tweets:
+    try:
+        clean_tweet = p.clean(tweet.retweeted_status.full_text)
+        tweet_info.loc[count] = [clean_tweet, tweet.user.screen_name, tweet.user.location, tweet.created_at]
+    except:
+        clean_tweet = p.clean(tweet.full_text)
+        tweet_info.loc[count] = [clean_tweet, tweet.user.screen_name, tweet.user.location, tweet.created_at]        
+    count = count+1
+
+csvFile = open('500_tweets_clean', 'a' ,encoding='utf-8')
+tweet_info.to_csv(csvFile, mode='a', columns=COLS, index=False, encoding="utf-8")
