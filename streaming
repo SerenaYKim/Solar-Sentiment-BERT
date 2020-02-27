@@ -48,7 +48,7 @@ class MyStreamListener(tweepy.StreamListener):
 myStreamListener = MyStreamListener()
 myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener, tweet_mode='extended')
 
-myStream.filter(track=['solar energy', 'solar panel', 'solar PV', 'solar photovoltaic', 'solar battery', 'solar thermal', 'solar power', 'solar-powered'])
+myStream.filter(languages=["en"], track=['solar energy', 'solar panel', 'solar PV', 'solar photovoltaic', 'solar battery', 'solar thermal', 'solar power', 'solar-powered', 'solar businesses'])
 myStream.filter(locations=LOCATIONS)
 
 if 'song' in text.lower() or 'mamamoo' or 'eclipse' in text.lower(): # functions for taking off unnecessary words
