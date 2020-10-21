@@ -1,4 +1,8 @@
-# Load Main Libraries
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
 
 import tweepy
 import json
@@ -7,35 +11,36 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 from pymongo import MongoClient
 
-# Your twitter developer api
-api_key = ''
-api_secret = ''
-access_token = ''
-access_secret = ''
+
+# In[2]:
+
+
+api_key = '......'
+api_secret = '......'
+access_token = '......'
+access_secret = '......'
 
 auth = tweepy.OAuthHandler(api_key, api_secret)
 auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth)
 
+
+# In[3]:
+
+
 auth = tweepy.OAuthHandler(api_key, api_secret)
 auth.set_access_token(access_token, access_secret)
 
-# Geographic area limitation only if user included the geolocation of tweets
-
-LOCATIONS = [-124.7771694, 24.520833, -66.947028, 49.384472,     # Contiguous US
-             -164.639405, 58.806859, -144.152365, 71.76871,      # Alaska
-             -160.161542, 18.776344, -154.641396, 22.878623]  
-    
 api = tweepy.API(auth)
 
 class MyStreamListener(tweepy.StreamListener):
     def __init__(self):
-        self.output_file = open('tweets_solar_xx-xx-xx-01.json', 'w') # Please change xx to the year-month-date-01
+        self.output_file = open('solar_tweets_20-10-18-00.json', 'w')
         
     def on_data(self, data):
         if not data.endswith('\n'): 
             data += '\n'
-            
+        
         self.output_file.write(data)
         
     def on_error(self, status):
@@ -44,13 +49,20 @@ class MyStreamListener(tweepy.StreamListener):
     
     def on_status(self, status):
         print(status.text)
-        
+
+
 myStreamListener = MyStreamListener()
 myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener, tweet_mode='extended')
 
-myStream.filter(languages=["en"], track=['solar energy', 'solar panel', 'solar PV', 'solar photovoltaic', 'solar battery', 'solar thermal', 'solar power', 'solar-powered', 'solar businesses'])
-myStream.filter(locations=LOCATIONS)
+myStream.filter(track=['solar energy', 'solar panel', 'solar panels', 'solar PV', 'solar rebates', 'solar photovoltaic', 'solar battery', 'solar thermal', 'solar power', 'solar tax', 'solar subsidies', 'solar-powered', 'rooftop solar', 'community solar', 'solar generation'])
 
-if 'song' in text.lower() or 'mamamoo' or 'eclipse' in text.lower(): # functions for taking off unnecessary words
+# Exclude tweets if they include... 
+if 'BTS' in text.lower() or 'mamamoo' in text.lower() or 'eclipse' in text.lower():
     return False  
- 
+
+
+# In[ ]:
+
+
+
+

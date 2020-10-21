@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
 import pandas as pd
 import numpy as np
 from scipy import stats
@@ -6,6 +12,9 @@ import json
 import re
 import collections
 import preprocessor as p
+
+
+# In[ ]:
 
 
 def read_raw_tweets(tweets_data_path):
@@ -63,3 +72,4 @@ def raw_tw_to_pd(tweets_data):
     print("\nNumber of Tweets: {:,}".format(num))
     print("From: {} to {}\n".format(tweets.created_at[0], tweets.created_at[num-1]))
     return tweets
+
