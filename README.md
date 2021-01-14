@@ -22,7 +22,7 @@ This is a repository for a project, "Sentiment Analysis of Solar Energy Using Bi
 
 ### Reference
 
-* Our analysis and code are built upon: *
+**Our analysis and code are built upon:**
 
 1. BERT by Google Research: https://github.com/google-research/bert
 2. RoBERTa Model: https://huggingface.co/transformers/model_doc/roberta.html
