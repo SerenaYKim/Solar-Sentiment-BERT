@@ -15,7 +15,7 @@ This is a repository for a project, "Sentiment Analysis of Solar Energy Using Bi
 3. Text classification using Robustrly optimized Bidirectional Encoder Representations from Transformers: https://github.com/SerenaYKim/Solar-Sentiment-BERT/blob/octo-branch/code/roberta-solar-sentiment.py
 4. Text classification using Bidirectional Encoder Representations from Transformers: Available soon
 
-### Data 
+### Data
 
-1. State-Level Summarized Data:
+1. State-Level Summarized Data: https://github.com/SerenaYKim/Solar-Sentiment-BERT/blob/octo-branch/data/SolarSentimentbyState_2020-12-01.csv
 2. Local-Level Summarized Data: Available soon
