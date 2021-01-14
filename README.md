@@ -10,7 +10,7 @@ This is a repository for a project, "Sentiment Analysis of Solar Energy Using Bi
 ### Code
 
 1. Streaming Twitter data using Twitter Application Programming Interface (API): https://github.com/SerenaYKim/Solar-Sentiment-BERT/blob/octo-branch/code/tweet-streaming.py
-2. "Cleaning" Twitter Data and retrieving location information of Twitter Users: Available soon
+2. "Cleaning" Twitter Data: Available soon
 2. Pre-Processing Twitter data: https://github.com/SerenaYKim/Solar-Sentiment-BERT/blob/octo-branch/code/pre-processing.py
 3. Text classification using Robustrly optimized Bidirectional Encoder Representations from Transformers: https://github.com/SerenaYKim/Solar-Sentiment-BERT/blob/octo-branch/code/roberta-solar-sentiment.py
 4. Text classification using Bidirectional Encoder Representations from Transformers: Available soon
