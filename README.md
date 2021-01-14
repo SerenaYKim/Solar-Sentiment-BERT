@@ -19,3 +19,11 @@ This is a repository for a project, "Sentiment Analysis of Solar Energy Using Bi
 
 1. State-Level Summarized Data: https://github.com/SerenaYKim/Solar-Sentiment-BERT/blob/octo-branch/data/SolarSentimentbyState_2020-12-01.csv
 2. Local-Level Summarized Data: Available soon
+
+### Reference
+
+* Our analysis and code are built upon: *
+
+1. BERT by Google Research: https://github.com/google-research/bert
+2. RoBERTa Model: https://huggingface.co/transformers/model_doc/roberta.html
+3. TensorFlow: https://www.tensorflow.org/official_models/fine_tuning_bert
