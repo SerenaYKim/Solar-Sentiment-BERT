@@ -27,3 +27,4 @@ This is a repository for a project, "Sentiment Analysis of Solar Energy Using Bi
 1. BERT by Google Research: https://github.com/google-research/bert
 2. RoBERTa Model: https://huggingface.co/transformers/model_doc/roberta.html
 3. TensorFlow: https://www.tensorflow.org/official_models/fine_tuning_bert
+4. Transformers: https://github.com/huggingface/transformers 
