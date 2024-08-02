@@ -4,19 +4,14 @@ This is a repository for a project, "Sentiment Analysis of Solar Energy Using Bi
 
 ### Paper
 
-1. Serena Y. Kim, Koushik Ganesan, Princess Dickens, Soumya Panda, "Public Sentiment Toward Solar Energy: Opinion Mining of Twitter Using a Transformer-Based Language Model," Manuscript Under Review (Jan 13, 2021)
+2. Serena Y. Kim, 
+1. Serena Y. Kim, Koushik Ganesan, Princess Dickens, Soumya Panda, "Public Sentiment Toward Solar Energy: Opinion Mining of Twitter Using a Transformer-Based Language Model," Sustainability. 2021. 
 
 
 ### Code
 
-1. Streaming Twitter data using Twitter Application Programming Interface (API): https://github.com/SerenaYKim/Solar-Sentiment-BERT/blob/octo-branch/code/tweet-streaming.py
-2. Pre-Processing Twitter data: https://github.com/SerenaYKim/Solar-Sentiment-BERT/blob/octo-branch/code/pre-processing.py
-3. Text classification using Robustrly optimized Bidirectional Encoder Representations from Transformers: https://github.com/SerenaYKim/Solar-Sentiment-BERT/blob/octo-branch/code/roberta-solar-sentiment.py
-4. Text classification using Bidirectional Encoder Representations from Transformers: Available soon
 
 ### Data
-
-1. State-Level Summarized Data: https://github.com/SerenaYKim/Solar-Sentiment-BERT/blob/octo-branch/data/SolarSentimentbyState_2020-12-01.csv
 
 ### Reference
 
