@@ -1,11 +1,11 @@
-# Public Sentiment Towards Solar Energy
+# Public Sentiment Toward Solar Energy
 
 This is a repository for a project, "Sentiment Analysis of Solar Energy Using Bidirectional Encoder Representations from Transformers".
 
 ### Paper
 
-2. Serena Y. Kim, 
-1. Serena Y. Kim, Koushik Ganesan, Princess Dickens, Soumya Panda, "Public Sentiment Toward Solar Energy: Opinion Mining of Twitter Using a Transformer-Based Language Model," Sustainability. 2021. 
+1. Serena Y. Kim, Crystal Soderman, and Lan Sang. (2024). "Public sentiment toward solar energy in the United States: 2013-2022," Under Review. 2024
+2. Serena Y. Kim, Koushik Ganesan, Princess Dickens, Soumya Panda, "[Public Sentiment Toward Solar Energy: Opinion Mining of Twitter Using a Transformer-Based Language Model](https://www.mdpi.com/2071-1050/13/5/2673)," Sustainability. 2021. 
 
 
 ### Code
