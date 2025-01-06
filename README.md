@@ -4,16 +4,13 @@ This is a repository for a project, "Sentiment Analysis of Solar Energy Using Bi
 
 ### Paper
 
-1. Serena Y. Kim, Crystal Soderman, and Lan Sang. (2024). "Public sentiment toward solar energy in the United States: 2013-2022," Under Review. 2024
+1. Serena Y. Kim, Crystal Soderman, and Lan Sang. (2024). "[Sentiment Analysis of Solar Energy in U.S. Cities: A 10-Year Analysis Using Transformer-Based Deep Learning](https://www.researchsquare.com/article/rs-5050458/v1)," Under Review. 2024
 2. Serena Y. Kim, Koushik Ganesan, Princess Dickens, Soumya Panda, "[Public Sentiment Toward Solar Energy: Opinion Mining of Twitter Using a Transformer-Based Language Model](https://www.mdpi.com/2071-1050/13/5/2673)," Sustainability. 2021. 
 
 
-### Code
+### Data Access
 
-
-### Data
-
-### Reference
+https://solarsentiment.org
 
 **Our analysis and code are built upon:**
 
