@@ -2,6 +2,10 @@
 
 This is a repository for a project, "Sentiment Analysis of Solar Energy Using Bidirectional Encoder Representations from Transformers".
 
+### Model 
+
+https://huggingface.co/serenakim/solar-sentiment 
+
 ### Paper
 
 1. Serena Y. Kim, Crystal Soderman, and Lan Sang. "[Sentiment Analysis of Solar Energy in U.S. Cities: A 10-Year Analysis Using Transformer-Based Deep Learning](https://doi.org/10.1007/s42001-025-00365-z)," Journal of Computational Social Science. 2025
